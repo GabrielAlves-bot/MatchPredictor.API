@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="MatchPredictor.API/MatchPredictor.API.csproj" />
+  <Project Path="MatchPredictor.Application/MatchPredictor.Application.csproj" Id="e774d221-c073-4817-aebf-5adf8310b78a" />
+  <Project Path="MatchPredictor.Domain/MatchPredictor.Domain.csproj" Id="93b07f58-abea-4f47-a192-5ebe1cf61f1d" />
+  <Project Path="MatchPredictor.Infraestructure.Data/MatchPredictor.Infraestructure.Data.csproj" Id="a022e0c4-4490-42df-89a7-25558290f240" />
+  <Project Path="MatchPredictor.Infraestructure.IoC/MatchPredictor.Infraestructure.IoC.csproj" Id="34f2dea1-d392-45af-a56a-d4a43432d89c" />
+</Solution>
