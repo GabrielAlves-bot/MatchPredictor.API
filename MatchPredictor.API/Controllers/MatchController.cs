@@ -1,4 +1,5 @@
-﻿using MatchPredictor.Application.Services.Interfaces;
+﻿using MatchPredictor.Application.Dto.Common;
+using MatchPredictor.Application.Services.Interfaces;
 using MatchPredictor.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +17,7 @@ namespace MatchPredictor.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Match>>> Get()
+        public async Task<ActionResult<List<MatchDto>>> Get()
         {
             var matches = await _matchAppService.Get();
             return Ok(matches);

@@ -29,15 +29,15 @@ namespace MatchPredictor.Application.Services
                 {
                     Id = match.HomeTeam.Id,
                     Name = match.HomeTeam.Name,
-                    ShieldUrl = string.Empty
+                    ShieldUrl = match.HomeTeam.ShieldUrl
                 },
                 AwayTeam = new TeamDto
                 {
                     Id = match.AwayTeam.Id,
                     Name = match.AwayTeam.Name,
-                    ShieldUrl = string.Empty
+                    ShieldUrl = match.AwayTeam.ShieldUrl
                 },
-                MatchDateTime = match.MatchDateTime,
+                Date = match.MatchDateTime,
                 Stadium = match.Stadium,
                 City = match.City,
                 Status = match.Status,
@@ -45,7 +45,7 @@ namespace MatchPredictor.Application.Services
                 AwayGoals = 0,
                 Phase = match.Phase,
                 Group = match.Group,
-                KnockoutStage = match.KnockoutStage,
+                KnockoutStage = match.KnockoutStage
             };
         }
     }
