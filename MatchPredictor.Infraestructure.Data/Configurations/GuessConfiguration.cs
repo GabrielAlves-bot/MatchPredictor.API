@@ -15,12 +15,6 @@ namespace MatchPredictor.Infraestructure.Data.Configurations
             entity.Property(e => e.Id)
                 .ValueGeneratedOnAdd();
 
-            entity.Property(e => e.HomeGoals)
-                .IsRequired();
-
-            entity.Property(e => e.AwayGoals)
-                .IsRequired();
-
             entity.Property(e => e.RegisteredAt)
                 .IsRequired();
 

@@ -18,7 +18,8 @@ namespace MatchPredictor.Infraestructure.Data.Repositorys
         {
             return await _context.Matches
                 .Include(m => m.HomeTeam)
-                .Include(m => m.AwayTeam).ToListAsync();
+                .Include(m => m.AwayTeam)
+                .AsNoTracking().ToListAsync();
         }
     }
 }

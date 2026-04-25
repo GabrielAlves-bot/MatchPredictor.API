@@ -9,6 +9,7 @@ namespace MatchPredictor.Application
         public static void AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IMatchAppService, MatchAppService>();
+            services.AddScoped<IGuessAppService, GuessAppService>();
         }
     }
 }

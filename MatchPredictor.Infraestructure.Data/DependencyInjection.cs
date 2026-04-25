@@ -17,8 +17,13 @@ namespace MatchPredictor.Infraestructure.Data
             services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DBConnection")));
 
+            //Providers
             services.AddScoped<IMatchProvider, MatchProvider>();
+            services.AddScoped<IGuessProvider, GuessProvider>();
+
+            //Repositorys
             services.AddScoped<IMatchRepository, MatchRepository>();
+            services.AddScoped<IGuessRepository, GuessRepository>();
         }
     }
 }
